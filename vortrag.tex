@@ -1,9 +1,10 @@
-\documentclass[german,10pt,xcolor=colortbl,compress
-%,draftrr
-]{beamer}
+\documentclass[german,10pt,xcolor=colortbl,compress]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{tabularx,ragged2e}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{hyperref}
 
 \usepackage{graphicx}
 \graphicspath{{./img/}}
@@ -12,10 +13,16 @@
 
 \usecolortheme{seagull}
 
+\setbeamertemplate{enumerate mini template}{\insertenumlabel}
 
 \title{Einstieg in die Akkreditierung}
-\author{Daniela Kern-Michler, Philipp Jaeger}
-\date{\today}
+\author{Daniela Kern-Michler\inst{1}, Philipp Jaeger\inst{2,3}}
+\date{\today\\BuFaTa Biologie, Leipzig}
+\institute{
+\inst{1}{Goethe-Universt\"at Frankfurt/Main\\}
+\inst{2}{University of Manitoba und Bergische Universit\"at Wuppertal\\}
+\inst{3}{Koordinierungsausschuss des studentischen Akkreditierungspools}
+}
 
 \def\bingo{
 \footnotesize
@@ -30,11 +37,17 @@
   \end{tabular}
 }
 
+\makeatletter
+\let\o@url\url
+\renewcommand\url[1]{\bgroup\color{blue} \o@url{#1}\egroup}
+\makeatother
+
 \begin{document}
 \begin{frame}
 \maketitle
 \vfill
-\includegraphics[width=2cm]{pool.PNG}\hfill*\includegraphics[width=2cm]{CC-BY-SA.png}
+\includegraphics[scale=0.6]{pool.PNG}
+\hfill\includegraphics[width=2cm]{CC-BY-SA.png}
 \end{frame}
 
 
@@ -72,7 +85,7 @@
   	\item Beschluss des Bundesverfassungsgerichtes erklärt Regelungen in NRW für ungültig (2016)
   	\vspace{1cm}
   	\pause
-  	\item \textbf{seit 1.1.2018: Akkreditierungsstaatsvertrag und Musterrechtsverordnung zur Akkreditierung sind rechtliche Grundlage}
+  	\item \textbf{seit 1.1.2018: Studienakkreditierungsstaatsvertrag und Musterrechtsverordnung zur Akkreditierung sind rechtliche Grundlage}
   	\item Bundesländer erlassen Rechtsverordnungen
   \end{itemize}   
 \end{frame}
@@ -115,7 +128,7 @@
 \frame{\tableofcontents[currentsection]}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame} 
-  \frametitle{Ablauf Stationenarbeit} 
+  \frametitle{Stationenarbeit} 
   \begin{itemize}
   	\item Kleingruppen (3-5 Leute)
   	\item 15 min pro Station (teilweise etwas knapp $\rightarrow$ Überblick gewinnen
@@ -136,13 +149,12 @@
   \bingo
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nachbesprechung}
-\frame{\tableofcontents[currentsection]}
+%\section{Nachbesprechung}
+%\frame{\tableofcontents[currentsection]}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Persönlicher Merkzettel}
+\begin{frame}{Persönlicher Merkzettel}
 Was sind die entscheidenden Dokumente für die Akkreditierung? Wo findet man Informationen?
-\vspace{0.5cm}
+%\vspace{0.5cm}
 \begin{itemize}
 \item Staatsvertrag
 \item Musterrechtsverordnung
@@ -150,8 +162,8 @@ Was sind die entscheidenden Dokumente für die Akkreditierung? Wo findet man Inf
 \end{itemize}
 \pause
 \begin{itemize}
-\item Website Akkreditierungsrat
-\item Website Studentischer Akkreditierungspool
+\item Website Akkreditierungsrat\\\url{https://akkreditierungsrat.de}
+\item Website Studentischer Akkreditierungspool\\\url{https://studentischer-pool.de}
 \end{itemize}
 \pause
 \begin{itemize}
@@ -189,9 +201,9 @@ Wie ist das österreichische Akkreditierungssystem aufgebaut?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Persönlicher Merkzettel}
-Wie sieht ein Akkreditierungsverfahren aus?
+{Wie sieht ein Akkreditierungsverfahren aus?}
 \vspace{0.5cm}
-  \includegraphics[width=1\textwidth]{verfahren.png}\\
+  \center\includegraphics[width=.7\textwidth]{verfahren2.png}\\
 Begutachtung muss nicht Vor-Ort Begehung bedeuten...
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -252,9 +264,11 @@ Stellt studentische Vertretung:
 Organisiert:
 \begin{itemize}
 \item Vernetzungstreffen
-\item \textbf{Schulungsseminare}
+\item \textbf{Schulungsseminare}\\
+	  aktuelle Termine:\\Webseite oder E-Mail-Verteiler
 \end{itemize}
-\hspace*{7cm}\includegraphics[scale=0.6]{pool.PNG}
+\vspace*{-6mm}
+\hspace*{7.5cm}\includegraphics[scale=0.7]{pool.PNG}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -265,7 +279,8 @@ Mitglieder werden entsendet von:
 \item fzs (freier zusammenschluss von studentInnenschaften)
 \item Landes-Asten-Konferenzen
 \end{itemize}
-\hspace*{7cm}\includegraphics[scale=0.6]{pool.PNG}
+\vspace*{22mm}
+\hspace*{7.5cm}\includegraphics[scale=0.7]{pool.PNG}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -278,40 +293,40 @@ An Euren Hochschulen:
 \item evtl. Stellungnahme vor Akkreditierungsentscheidung
 \end{itemize}
 \vspace*{0.5cm}
-Auf der ZaPF...
+Auf der BuFaTas usw. ...
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section[ZaPF]{Positionen der ZaPF}
-\frame{\tableofcontents[currentsection]}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Kombinationsstudieng"ange]{Kombinationsstudieng"ange (insbes. Lehramt)}
+
 \begin{frame}
-\frametitle{ZaPF \& Akkreditierung}
-Manchmal etwas unübersichtlich und ein Thema auf dieser ZaPF, aber schon einiges an Arbeit.\\ 
-
-Relevant für Akkreditierungsverfahren:
+\frametitle{\insertsection}
+\framesubtitle{Behandlung als Kombinationsstudiengang}
+\begin{block}{Kombinationsstudiengang}
+	In einem Kombinationsstudiengang werden (mindestens) zwei F"acher gleichberechtigt studiert. Beispiele: \glqq Doppel-Bachelor\grqq, Lehramt
+\end{block}
+\pause
 \begin{itemize}
-\item Wikiseite: Kategorie:Akkreditierung (zu finden unter Themen und Projekte)
-\item Richtlinien für Bachelor- und Masterstudiengänge (WiSe 2008)
-\item Positionspapier und Resolution zur Ausgestaltung von Qualitätsmanagementsystemen (WiSe 2012 und SoSe 2013)
-\item Positionspapier der ZaPF zum studentischen Akkreditierungspool (SoSe 2012)
+	\item Mehrere F"acherkombinationen sind w"ahlbar
+	\item \S 32 MRVO Abs. 2: Akkreditierungsgegenstand ist der Kombinationsstudiengang. Die Hochschulen stellen durch ihr jeweiliges Qualitätsmanagement sicher, dass die Studierbarkeit in allen möglichen Fächerkombinationen gegeben ist. 
+	\item betrifft insbes. die Organisation der Stundenpl"ane, aber auch Pr"ufungslast, Praktika, usw.
+	\item besonderes Studiengangsprofil f"ur M Ed ist vorgeschrieben\\(MRVO \S 4)
 \end{itemize}
-
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
-\frametitle{ZaPF \& Akkreditierung}
-
-Relevant für Arbeit auf der ZaPF:
-\begin{itemize}
-\item Alles, was jemals beschlossen oder beredet wurde ;-)
-\item Protokoll AK Überarbeitung der Akkreditierungsrichtlinien (WiSe 2015)
-\item Positionspapier und Reso zur Akkreditierung (Änderungen der Gesetzeslage)(WiSe 2017)
-\item Positionspapier zum deutschen Akkreditierungssystem (SoSe 2016)
-\end{itemize}
-\vspace{0.5cm}
-Fleißig ins Wiki schauen, um doppelte Arbeit zu vermeiden!\\
-$\rightarrow$ Akkreditierung I \& Akkreditierung II
+\frametitle{\insertsection}
+\framesubtitle{Besondere Pr"ufbereiche}
+\textit{\S 13 MRVO Abs. 3}\\\vspace*{.5cm}
+Im Rahmen der Akkreditierung von Lehramtsstudiengängen ist 
+insbesondere zu prüfen, ob 
+\begin{enumerate}[(1)]
+\item  ein integratives Studium an Universitäten oder gleichgestellten Hochschulen von mindestens zwei Fachwissenschaften und von Bildungswissenschaften in der Bachelorphase sowie  in der Masterphase (Ausnahmen sind bei den Fächern Kunst und Musik zulässig), 
+\item schulpraktische Studien bereits während des Bachelorstudiums und 
+\item eine Differenzierung des Studiums und der Abschlüsse nach Lehrämtern
+\end{enumerate}
+erfolgt  sind. 
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Fragen}
 \begin{frame}
